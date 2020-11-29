@@ -1,0 +1,47 @@
+.cell {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    display: inline-block;
+
+    color: blue;
+    font-size: large;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2em;
+
+    cursor: grab;
+}
+
+.active {
+    background-color: rgba(240, 240, 172, 0.5);
+}
+
+.given {
+    color: black;
+    font-weight: 600;
+}
+
+.left {
+    border-left: 1px solid black;
+}
+
+.thickLeft {
+    border-left-width: 5px;
+}
+
+.top {
+    border-top: 1px solid black;
+}
+
+.thickTop {
+    border-top-width: 5px;
+}
+
+.right {
+    border-right: 5px solid black;
+}
+
+.bottom {
+    border-bottom: 5px solid black;
+}

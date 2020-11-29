@@ -1,24 +1,113 @@
 import React from 'react';
-import logo from './logo.svg';
+import Board from './components/Board/Board';
+
 import './App.css';
+
+const board = [
+  // Box 1
+  { digit: 7, given: true, active: false }, 
+  { digit: 1, given: true, active: false }, 
+  { digit: 5, given: true, active: false }, 
+  { digit: null, given: false, active: false }, 
+  { digit: null, given: false, active: false }, 
+  { digit: 4, given: true, active: false }, 
+  { digit: 2, given: true, active: false }, 
+  { digit: null, given: false, active: false }, 
+  { digit: 6, given: true, active: false }, 
+
+  // Box 2
+  { digit: 9, given: true, active: false }, 
+  { digit: 2, given: true, active: false }, 
+  { digit: 4, given: true, active: false }, 
+  { digit: null, given: false, active: false }, 
+  { digit: null, given: false, active: false }, 
+  { digit: null, given: false, active: false }, 
+  { digit: null, given: false, active: false }, 
+  { digit: null, given: false, active: false }, 
+  { digit: 7, given: true, active: false }, 
+
+  // Box 3
+  { digit: null, given: false, active: false }, 
+  { digit: null, given: false, active: false }, 
+  { digit: null, given: false, active: false }, 
+  { digit: 7, given: true, active: false }, 
+  { digit: 2, given: true, active: false }, 
+  { digit: 1, given: true, active: false }, 
+  { digit: null, given: false, active: false }, 
+  { digit: null, given: false, active: false }, 
+  { digit: 9, given: true, active: false }, 
+
+  // Box 4
+  { digit: null, given: false, active: false }, 
+  { digit: 9, given: true, active: false }, 
+  { digit: null, given: false, active: false }, 
+  { digit: 2, given: true, active: false }, 
+  { digit: 7, given: true, active: false }, 
+  { digit: null, given: false, active: false }, 
+  { digit: 4, given: true, active: false }, 
+  { digit: null, given: false, active: false }, 
+  { digit: null, given: false, active: false }, 
+
+  // Box 5
+  { digit: 4, given: true, active: false }, 
+  { digit: null, given: false, active: false }, 
+  { digit: 6, given: true, active: false }, 
+  { digit: null, given: false, active: false }, 
+  { digit: null, given: false, active: false }, 
+  { digit: 5, given: true, active: false }, 
+  { digit: 7, given: true, active: false }, 
+  { digit: null, given: false, active: false }, 
+  { digit: null, given: false, active: false }, 
+
+  // Box 6
+  { digit: null, given: false, active: false }, 
+  { digit: null, given: false, active: false }, 
+  { digit: 2, given: true, active: false }, 
+  { digit: null, given: false, active: false }, 
+  { digit: 6, given: true, active: false }, 
+  { digit: 8, given: true, active: false }, 
+  { digit: 1, given: true, active: false }, 
+  { digit: null, given: false, active: false }, 
+  { digit: null, given: false, active: false }, 
+
+  // Box 7
+  { digit: 3, given: true, active: false }, 
+  { digit: 4, given: true, active: false }, 
+  { digit: null, given: false, active: false }, 
+  { digit: null, given: false, active: false }, 
+  { digit: null, given: false, active: false }, 
+  { digit: null, given: false, active: false }, 
+  { digit: 9, given: true, active: false }, 
+  { digit: 5, given: true, active: false }, 
+  { digit: null, given: false, active: false }, 
+
+  // Box 8
+  { digit: null, given: false, active: false }, 
+  { digit: null, given: false, active: false }, 
+  { digit: null, given: false, active: false }, 
+  { digit: 3, given: true, active: false }, 
+  { digit: 8, given: true, active: false }, 
+  { digit: 2, given: true, active: false }, 
+  { digit: null, given: false, active: false }, 
+  { digit: 7, given: true, active: false }, 
+  { digit: null, given: false, active: false }, 
+
+  // Box 9
+  { digit: null, given: false, active: false }, 
+  { digit: 6, given: true, active: false }, 
+  { digit: null, given: false, active: false }, 
+  { digit: 5, given: true, active: false }, 
+  { digit: null, given: false, active: false }, 
+  { digit: null, given: false, active: false }, 
+  { digit: 8, given: true, active: false }, 
+  { digit: 3, given: true, active: false }, 
+  { digit: null, given: false, active: false }, 
+]
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Board initialBoard={ board }/>
     </div>
   );
 }
